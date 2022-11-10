@@ -32,7 +32,7 @@ const Service = () => {
                     ></ServiceCard>)
                 }
             </div>
-            <div className='text-center mt-16 mb-20'>
+            <div className='text-center mt-16'>
                 <button className="btn bg-pink-600 border-none mb-20 uppercase tracking-widest"><Link to='/services'>View All SERVICES</Link></button>
         </div>
         </div >

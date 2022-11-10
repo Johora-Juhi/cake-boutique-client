@@ -21,7 +21,7 @@ const Header = () => {
                 <img src={logo} alt="" />
             </div>
             <div className="navbar-end">
-            <button className="btn btn-outline btn-secondary"><Link>Login</Link></button>
+            <button className="btn btn-outline btn-secondary"><Link to="/login">Login</Link></button>
             </div>
         </div>
     );
