@@ -4,7 +4,6 @@ import { AuthContext } from '../../../context/AuthProvider/AuthProvider';
 import ReviewCard from './ReviewCard';
 
 const ReviewSection = ({ service }) => {
-    // console.log(serviceId);
     const { _id, name, img } = service;
     const [reviews, setReviews] = useState([]);
     const { user } = useContext(AuthContext);
