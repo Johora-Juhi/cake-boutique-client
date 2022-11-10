@@ -13,7 +13,7 @@ const Update = () => {
     const handleUpdateReview = event => {
         event.preventDefault();
         console.log(review);
-        fetch(`http://localhost:5000/myReviews/${storedReview._id}`, {
+        fetch(`https://assignment-eleven-server-hazel.vercel.app/myReviews/${storedReview._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

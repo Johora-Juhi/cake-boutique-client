@@ -5,10 +5,10 @@ import ServiceCard from '../../../Shared/ServiceShare/ServiceSection/ServiceCard
 
 const Service = () => {
     const [services, setServices] = useState([]);
-    const size=3;
-    
+    const size = 3;
+
     useEffect(() => {
-        const url = `http://localhost:5000/services?&size=${size}`;
+        const url = `https://assignment-eleven-server-hazel.vercel.app/services?&size=${size}`;
         console.log(size);
         fetch(url)
             .then(res => res.json())
@@ -33,7 +33,7 @@ const Service = () => {
             </div>
             <div className='text-center mt-16'>
                 <button className="btn bg-pink-600 border-none mb-20 uppercase tracking-widest"><Link to='/services'>View All SERVICES</Link></button>
-        </div>
+            </div>
         </div >
     );
 };

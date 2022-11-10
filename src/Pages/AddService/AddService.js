@@ -28,7 +28,7 @@ const AddService = () => {
         }
 
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://assignment-eleven-server-hazel.vercel.app/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -74,7 +74,7 @@ const AddService = () => {
                         <label className='mt-4' htmlFor="">Description</label><br />
                         <input name='description' type="text" placeholder="Enter Service Description" className="input input-bordered w-full " required /><br />
                         <div className="card-actions">
-                            <button style={{ textTransform: 'uppercase'}} className="btn btn-block mt-5 bg-pink-500 border-0"> ADD SERVICE</button>
+                            <button style={{ textTransform: 'uppercase' }} className="btn btn-block mt-5 bg-pink-500 border-0"> ADD SERVICE</button>
                         </div>
                     </form>
                 </div>

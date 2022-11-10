@@ -7,10 +7,10 @@ const Services = () => {
     useTitle('Services');
     const [services, setServices] = useState([]);
 
-    const size=services.length;
-    
+    const size = services.length;
+
     useEffect(() => {
-        const url = `http://localhost:5000/services?&size=${size}`;
+        const url = `https://assignment-eleven-server-hazel.vercel.app/services?&size=${size}`;
         console.log(size);
         fetch(url)
             .then(res => res.json())
