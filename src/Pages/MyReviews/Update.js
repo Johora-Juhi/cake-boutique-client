@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Update = () => {
     const storedReview = useLoaderData();
-    const {user}=useContext(AuthContext)
+    const { user } = useContext(AuthContext)
 
     const [review, setReview] = useState(storedReview);
 
@@ -35,7 +35,7 @@ const Update = () => {
     const handleInputChange = event => {
         const field = event.target.name;
         const value = event.target.value;
-        const newReview = {...review}
+        const newReview = { ...review }
         newReview[field] = value;
         setReview(newReview);
 
@@ -43,17 +43,18 @@ const Update = () => {
 
     return (
         <div>
-           {
-            user?.uid && 
-            <>
-             <h2>Please Update: {storedReview.serviceName}</h2>
-            <form onSubmit={handleUpdateReview}>
-                <input onChange={handleInputChange} defaultValue={storedReview.comment} type="text" name='comment' placeholder='review' required />
-                <br />
-                <button type="submit">Update Review</button>
-            </form></>
-           }
-                       <ToastContainer />
+            {
+                user?.uid &&
+                <div className='w-2/4 mx-auto my-20 p-16 bg-gray-200'>
+                    <h2 className='text-2xl text-center mb-5'>Please Update: {storedReview.serviceName}</h2>
+                    <form onSubmit={handleUpdateReview}>
+                        <input className='w-full py-10 px-5 mb-5' onChange={handleInputChange} defaultValue={storedReview.comment} type="text" name='comment' placeholder='review' required />
+                        <br />
+                        <button className='btn bg-pink-500 border-0' type="submit">Update Review</button>
+                    </form>
+                </div>
+            }
+            <ToastContainer />
 
         </div>
     );

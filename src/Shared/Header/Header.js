@@ -29,13 +29,14 @@ const Header = () => {
                 <img src={logo} alt="" />
             </div>
             <div className="navbar-end">
-            {
+                {
                     user?.uid ?
                         <>
-                            <div>
-                            <Link className='mr-3' to='/myReviews'>My Reviews</Link>
-                            <Link className='mr-3' to='/addServices'>Add Service</Link>
-                                {
+                            <div className='flex mt-2'>
+                                <Link className='mr-3 mb-5' to='/myReviews'>My Reviews</Link>
+                                <Link className='mr-3 mb-5' to='/addServices'>Add Service</Link>
+                               <div>
+                               {
                                     user?.photoURL ?
                                         <div title={user.displayName} className="avatar ">
                                             <div className="w-8 rounded-full">
@@ -45,14 +46,15 @@ const Header = () => {
                                         :
                                         <FaUserAlt title={user.displayName} />
                                 }
+                               </div>
                             </div>
-                            
+
                             <button className='btn btn-error my-2 mr-8 ml-5 uppercase' onClick={handleLogOut} variant="primary">Log out</button>
                         </>
                         :
                         <>
-                           <button className="btn btn-outline btn-secondary"><Link to="/login">Login</Link></button>
-                                                     </>
+                            <button className="btn btn-outline btn-secondary"><Link to="/login">Login</Link></button>
+                        </>
                 }
             </div>
         </div>
