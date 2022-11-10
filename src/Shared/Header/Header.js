@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/home/logo.png';
+import { AuthContext } from '../../context/AuthProvider/AuthProvider';
+import { FaUserAlt } from 'react-icons/fa';
 
 const Header = () => {
+    const { user, logOut } = useContext(AuthContext);
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.error('error', error))
+    }
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -21,7 +29,31 @@ const Header = () => {
                 <img src={logo} alt="" />
             </div>
             <div className="navbar-end">
-            <button className="btn btn-outline btn-secondary"><Link to="/login">Login</Link></button>
+            {
+                    user?.uid ?
+                        <>
+                            <div>
+                            <Link className='mr-3' to='/myReviews'>My Reviews</Link>
+                            <Link className='mr-3' to='/addServices'>Add Service</Link>
+                                {
+                                    user?.photoURL ?
+                                        <div title={user.displayName} className="avatar ">
+                                            <div className="w-8 rounded-full">
+                                                <img src={user?.photoURL} alt="Tailwind-CSS-Avatar-component" />
+                                            </div>
+                                        </div>
+                                        :
+                                        <FaUserAlt title={user.displayName} />
+                                }
+                            </div>
+                            
+                            <button className='btn btn-error my-2 mr-8 ml-5 uppercase' onClick={handleLogOut} variant="primary">Log out</button>
+                        </>
+                        :
+                        <>
+                           <button className="btn btn-outline btn-secondary"><Link to="/login">Login</Link></button>
+                                                     </>
+                }
             </div>
         </div>
     );

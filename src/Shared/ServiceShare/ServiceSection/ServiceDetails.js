@@ -1,13 +1,14 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import ReviewSection from '../ReviewSection/ReviewSection';
 
 const ServiceDetails = () => {
     const service = useLoaderData();
     return (
         <div className='container mx-auto'>
-            <div className='grid grid-cols-2'>
+            <div className='grid grid-cols-2 gap-10'>
                 <div className="py-20">
-                <img className="mx-auto" src={service.img} alt="" />
+                    <img className="mx-auto" src={service.img} alt="" />
                     <h4 className="text-6xl mb-3 mt-5">{service.name}</h4>
                     <p className="text-4xl mt-10 mb-3">Description</p>
                     <p className="w-full mx-auto p5-10 text-gray-500 font-thin leading-7 text-justify tracking-wider mb-10">{service.description}</p>
@@ -17,9 +18,10 @@ const ServiceDetails = () => {
                     <p className="text-gray-500 font-normal tracking-wider text-xl leading-9">Order Limit: {service.weight}</p>
                     <p className="text-gray-500 font-normal tracking-wider text-xl leading-9">Rating: {service.rating}</p>
                 </div>
-            </div>
-
-            <div>
+                <div className='py-20'>
+                <h1 className='text-2xl text-gray-600 font-semibold'>Reviews</h1>
+                    <ReviewSection service={service}></ReviewSection>
+                </div>
             </div>
         </div>
     );
