@@ -51,10 +51,11 @@ const AddService = () => {
         <div>
             <div className="container mx-auto px-10 py-10 text-center">
                 <h2 className='text-6xl mb-10 font-semibold text-pink-600'>Add Services</h2>
-                {/* <img className='m-auto' src={bar} alt="" /> */}
+
             </div>
             <div className="w-2/4 mx-auto pb-20 pt-10">
                 <div className='p-16 bg-gray-200 rounded-xl'>
+
                     <form onSubmit={handleAddService}>
                         <label className='mt-3' htmlFor="">Name</label> <br />
                         <input name='name' type="text" placeholder="Add Service Name" className="input input-bordered w-full mb-3" required /><br />
