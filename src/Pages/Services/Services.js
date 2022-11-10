@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import useTitle from '../../hooks/useTitle';
 
 import ServiceCard from '../../Shared/ServiceShare/ServiceSection/ServiceCard';
 
 const Services = () => {
+    useTitle('Services');
     const [services, setServices] = useState([]);
 
     const size=services.length;

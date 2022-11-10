@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useTitle from '../../../hooks/useTitle';
 
 const Register = () => {
+    useTitle('Register');
     return (
         <div className="hero min-h-screen bg-pink-50">
             <div style={{width: '400px'}} className="hero-content flex-col lg:flex-row-reverse">

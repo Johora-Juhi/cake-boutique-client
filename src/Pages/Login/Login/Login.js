@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useTitle from '../../../hooks/useTitle';
 
 const Login = () => {
+    useTitle('Login');
     return (
         <div className="hero min-h-screen bg-pink-50">
             <div className="hero-content flex-col lg:flex-row-reverse">

@@ -5,7 +5,7 @@ import img1 from '../../../assets/images/home/sweet.jpg'
 const Moments = () => {
     return (
         <div className='memories'>
-            <div className="grid md:grid-cols-2 sm:grid-cols-1 justify-center items-center text-center">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 justify-center items-center text-center">
                 <div>
                     <img src={img1} alt="" />
                 </div>
