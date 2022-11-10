@@ -1,0 +1,9 @@
+.qBackground {
+    background: rgba(83, 0, 69, 0.5) url('../../../assets//images/home/home-quality.jpg');
+    background-position: center;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Birthday Cake",
+        "price": "25",
+        "rating": "5",
+        "description": "A birthday cake is a cake eaten as part of a birthday celebration. Birthday cakes are often layer cakes with frosting served with small lit candles on top representing the celebrant's age. Variations include cupcakes, cake pops, pastries, and tarts. It is believed that the first actual birthday cake was made in Germany in the Middle Ages. The Germans would celebrate children's birthdays with cake, calling the celebration Kinderfest. Cakes originally were a coarse, bread-like product, and later became a much sweeter version, called Geburtstagorten. A cake is essential when it comes to celebrations. It adds more happiness to the occasion, symbolises success and milestones, and makes a perfect gift to warm the heart of the celebrant. Nothing can beat the power of cakes to light up the party and make things extra special.",
+        "flavours": "Chocolate, Vanilla, Strawbery",
+        "weight": "Maximum 2 Pound",
+        "design": "Customizable",
+        "img": "https://i.ibb.co/hZV2q8g/birthday-cake.jpg"
+    },
+    {
+        "name": "Wedding Cake",
+        "price": "65",
+        "rating": "5",
+        "description": "The wedding cake symbolizes prosperity, good luck and fertility and is made of the best ingredients available so that the marriage will be long lasting, happy and with many offspring. The wedding cake has been a part of the ceremony since the ancient Greeks and Romans. As part of the nuptials, the groom broke bread over the bride's head. This was to symbolize her submission, the end of her purity, and to represent good luck and fertility. The cake was to symbolize status and social standing and was to match the bride's white dress to symbolize purity and importance. In Victorian times the wedding cake was known as the 'brides cake' and originally the bride would cut the cake and distribute it to her guests herself.",
+        "flavours": "Chocolate, Vanilla, Strawbery",
+        "weight": "Maximum 5 Pound",
+        "design": "Customizable",
+        "img": "https://i.ibb.co/TMp4mcJ/wedding-cake.jpg"
+    },
+    {
+        "name": "Seasonal Cake",
+        "price": "15",
+        "rating": "4.7",
+        "description": "Here in the south, cooking and baking are all about creating something together and sharing the love. We carry this tradition into every delicious hand-made Daisy Cake. Each cake is baked with the freshest ingredients and carefully packed by hand. We truly believe in sharing a taste of the south. So enjoy a slice of love, from our kitchen to yours. When the weather’s cold outside, it’s time to pop the kettle on and curl up on the sofa with a comforting cake. All these recipes contain decadent chocolate, seasonal fruit and vegetables or warming spices.",
+        "flavours": "Chocolate, Vanilla, Strawbery",
+        "weight": "Maximum 1 Pound",
+        "design": "Not Customizable",
+        "img": "https://i.ibb.co/cDP0wVC/seasonal-cake.jpg"
+    },
+    {
+        "name": "Other Sweet Stuff",
+        "price": "13",
+        "rating": "4.9",
+        "description": "Most sweet-tasting foods contain sugar. The top of the tongue has special sensors called “taste buds” that detect sugar and other things in foods. When any type of sugar touches the tongue, taste buds send a signal to the brain. Then the brain reacts in a way that we feel as pleasure. There are a wide variety of desserts in western cultures, including cakes, cookies, biscuits, gelatins, pastries, ice creams, pies, puddings, and candies. Fruit is also commonly found in dessert courses because of its natural sweetness.",
+        "flavours": "Chocolate, Vanilla, Strawbery",
+        "weight": "Maximum 1 KG",
+        "design": "Not Customizable",
+        "img": "https://i.ibb.co/XXFyPYK/sweet-stuff.jpg"
+    },
+    {
+        "name": "Sponge Cakes",
+        "price": "22",
+        "rating": "5",
+        "description": "Sponge cake is a light cake made with egg whites, flour and sugar, sometimes leavened with baking powder. Sponge cakes, leavened with beaten eggs, originated during the Renaissance, possibly in Spain. Cake is often served as a celebratory dish on ceremonial occasions, such as weddings, anniversaries, and birthdays. There are countless cake recipes; some are bread-like, some are rich and elaborate, and many are centuries old.",
+        "flavours": "Chocolate, Vanilla, Strawbery",
+        "weight": "Maximum 1 KG",
+        "design": "Not Customizable",
+        "img": "https://i.ibb.co/Yf7wKtn/plain-cake.jpg"
+    },
+    {
+        "name": "Cup Cakes",
+        "price": "08",
+        "rating": "4.7",
+        "description": "A cupcake (also British English: fairy cake; Hiberno-English: bun) is a small cake designed to serve one person, which may be baked in a small thin paper or aluminum cup. As with larger cakes, frosting and other cake decorations such as fruit and candy may be applied. Cupcakes are small, tasty snack cakes that are favored for their portability and portion-control. They are batter cakes baked in a cup-shaped foil or temperature resistant paper. A cupcake can be prepared from a variety of formulations and can be decorated with cream and icings.",
+        "flavours": "Chocolate, Vanilla, Strawbery",
+        "weight": "Maximum 20 Piece",
+        "design": "Not Customizable",
+        "img": "https://i.ibb.co/8KSgmTL/cup-cake.jpg"
+    }
+]
