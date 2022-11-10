@@ -24,7 +24,6 @@ const MyReviews = () => {
                 .then(data => {
                     console.log(data);
                     if (data.deletedCount > 0) {
-                        // alert('deleted successfully');
                         toast.error('Review Deleted !', {
                             position: toast.POSITION.TOP_CENTER
                         });
