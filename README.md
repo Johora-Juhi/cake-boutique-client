@@ -1,7 +1,7 @@
 # Cake Bautique
 
 ## Live Link 
-(https://cake-boutique-accd9.firebaseapp.com/)[https://cake-boutique-accd9.firebaseapp.com/]
+[https://cake-boutique-accd9.firebaseapp.com/]
 
 ## Features
 
