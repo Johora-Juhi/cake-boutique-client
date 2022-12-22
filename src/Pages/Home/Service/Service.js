@@ -18,9 +18,9 @@ const Service = () => {
     }, [size])
 
     return (
-        <div className='bg-pink-100'>
+        <div className='border-b border-red-400'>
             <div className="container mx-auto px-10 py-10 text-center">
-                <h2 className='text-6xl mb-3 font-semibold text-pink-500'>Services</h2>
+                <h2  style={{ fontFamily: 'Dancing Script', fontWeight: '600' }} className='text-7xl mb-3 font-semibold text-red-400'>Services</h2>
                 {/* <img className='m-auto' src={bar} alt="" /> */}
             </div>
             <div className='container mx-auto grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10'>
@@ -32,7 +32,7 @@ const Service = () => {
                 }
             </div>
             <div className='text-center mt-16'>
-                <button className="btn bg-pink-600 border-none mb-20 uppercase tracking-widest"><Link to='/services'>View All SERVICES</Link></button>
+                <button className="btn bg-pink-600 border-none mb-20 uppercase tracking-widest rounded-none text-white"><Link to='/services'>View All SERVICES</Link></button>
             </div>
         </div >
     );

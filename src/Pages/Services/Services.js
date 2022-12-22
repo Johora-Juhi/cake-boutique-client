@@ -21,9 +21,9 @@ const Services = () => {
     return (
         <div>
             <div className="container mx-auto px-10 py-10 text-center">
-                <h2 className='text-6xl mb-3 font-semibold text-pink-400'>Services</h2>
+                <h2 style={{ fontFamily: 'Dancing Script', fontWeight: '600' }} className='text-7xl mb-3 font-semibold text-red-400'>Services</h2>
             </div>
-            <div className='container mx-auto grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-20'>
+            <div className='container w-full lg:w-3/4 mx-auto grid gap-10 grid-cols-1 md:grid-cols-2 pb-20'>
                 {
                     services.map(service => <ServiceCard
                         key={service._id}

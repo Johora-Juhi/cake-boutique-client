@@ -1,7 +1,32 @@
-.banner {
-    background-image: url('../../../assets/images/home/c-cake.jpg');
+.bbNrP {
+    height: 360px;
+    overflow: hidden;
+}
+
+.bbNr {
+    background-image: url('../../../assets/assets/images/home/cakeBBack.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 100%;
+    animation: zoom-in-zoom-out 10s ease-in-out infinite;
+}
+
+.fBanner p{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
 }

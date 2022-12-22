@@ -54,6 +54,25 @@ const ReviewSection = ({ service }) => {
 
     return (
         <div>
+            <div className='container mx-auto my-20'>
+                {
+                    user?.uid ?
+                        <div style={{ backgroundColor: '#FFF8FF' }} className='w-3/4 mx-auto p-10 rounded-xl border border-red-200 mb-20'>
+                            <h1 className='text-2xl text-gray-700 mb-5'>Add Your Review</h1>
+                            <form onSubmit={handleAddComment}><textarea className='bg-gray-50 border border-gray-200 rounded-xl p-3 w-full' name="comment" id="" cols="50" rows="5" placeholder='Enter Your Review Here'></textarea> <br />
+                                <button className="btn btn-outline btn-error uppercase tracking-wide rounded-md mt-3">Add Review</button>
+                            </form>
+                        </div>
+                        :
+                       <div className='w-3/4 mx-auto text-center'><button className="btn btn-outline btn-error uppercase tracking-wide"><Link to='/login'>Please login to add a review</Link></button></div> 
+                }
+                {
+                    reviews.length?
+                    <h1 style={{ fontFamily: 'Dancing Script', fontWeight: '600' }} className='w-3/4 mx-auto text-5xl text-gray-600 font-semibold'>Reviews</h1>
+                    :
+                    <h1> </h1>
+                }
+            </div>
             {
                 reviews.map(review =>
                     <ReviewCard
@@ -62,19 +81,6 @@ const ReviewSection = ({ service }) => {
                     ></ReviewCard>
                 )
             }
-            <div className='container mx-auto my-20'>
-                {
-                    user?.uid ?
-                        <>
-                            <h1 className='text-2xl text-gray-700 mb-5'>Add Your Review</h1>
-                            <form onSubmit={handleAddComment}><textarea className='bg-gray-200 p-3' name="comment" id="" cols="50" rows="5" placeholder='Enter Your Review Here'></textarea> <br />
-                                <button className="btn btn-outline btn-error uppercase tracking-wide">Add Review</button>
-
-                            </form></>
-                        :
-                        <button className="btn btn-outline btn-error uppercase tracking-wide"><Link to='/login'>Please login to add a review</Link></button>
-                }
-            </div>
         </div>
 
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Moments.css';
-import img1 from '../../../assets/images/home/sweet.jpg'
+import img1 from '../../../assets/assets/images/home/sweet.jpg'
 
 const Moments = () => {
     return (

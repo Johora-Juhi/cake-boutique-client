@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../context/AuthProvider/AuthProvider';
 import useTitle from '../../../hooks/useTitle';
+import './Login.css'
 
 const Login = () => {
     useTitle('Login');
@@ -41,13 +42,12 @@ const Login = () => {
             .catch(error => console.error('error', error))
     }
     return (
-        <div className="hero min-h-screen bg-pink-50">
-            <div className="hero-content flex-col lg:flex-row-reverse">
-                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                    <form  onSubmit={handleSubmit} className="card-body">
+            <div className="w-full md:w-2/4 lg:w-1/4 mx-auto mb-20 px-10 lg:px-0 ">
+                <div className="card flex-shrink-0 w-full rounded-lg bg-base-100  border border-red-400 login">
+                    <form  onSubmit={handleSubmit} className="card-body pb-0">
                         <div className="form-control">
-                            <h1 className='text-3xl font-semibold'>Sign In</h1>
-                            <p>New in Cake Boutique? <Link style={{color: 'blue'}} to='/register'>Register</Link> </p>
+                            <h1 className='text-3xl pb-2 font-semibold'>Login</h1>
+                            <p className='text-stone-400 text-xs'>New in Cake Boutique? <Link style={{color: 'blue'}} to='/register'>Register</Link> </p>
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
@@ -62,15 +62,15 @@ const Login = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button  style={{backgroundColor: '#f472b6' , border: 'none'}} className="btn btn-primary">Login</button>
+                            <button className="btn bg-pink-600 border-none uppercase tracking-widest rounded-none text-white">Login</button>
                         </div>
                         <p>{error}</p>
+                        <div className="divider -mt-1">OR</div>
                     </form>
-                    <button onClick={handleGoogleSignIn}  style={{backgroundColor: '#f472b6' , border: 'none'}} className="btn btn-primary px-10 mx-8 mb-10">Google Sign Up</button>
-
+                    
+                    <button onClick={handleGoogleSignIn} className="btn btn-bg btn-outline uppercase border-pink-500 text-pink-500 rounded-none px-10 mx-8 mb-10">Google Sign Up</button>
                 </div>
             </div>
-        </div>
     );
 };
 

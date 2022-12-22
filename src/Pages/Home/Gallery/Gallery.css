@@ -1,0 +1,7 @@
+@media only screen and (max-width: 640px) {
+    .cakeCard {
+      /* background-color: lightblue; */
+      height: 300px!important
+      
+    }
+  }
